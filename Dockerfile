@@ -34,4 +34,4 @@ ENV DOCKER_CONTENT_TRUST = 1
 ENV APP_TMP_DATA=/tmp
 
 # команда при запуске контейнера
-CMD python3 app.py runserver 0.0.0.0:8000
+ENTRYPOINT python3 app.py runserver 0.0.0.0:8000
