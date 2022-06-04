@@ -12,7 +12,7 @@ RUN groupadd --gid 5000 myuser && useradd --home-dir /home/myuser --create-home 
 # установка рабочей директории в контейнере
 WORKDIR /home/myuser
 
-ENV PATH $PATH:/home/myuser/.local/bin
+ENV PATH=$PATH:/home/myuser/.local/bin
 
 USER myuser
 
